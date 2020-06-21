@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements MainView.InitView
 
     }
 
-    private EndlessOnScrollListener scrollData(final int page) {
+    private EndlessOnScrollListener scrollData(final Integer page) {
         return new EndlessOnScrollListener() {
             @Override
             public void onLoadMore() {

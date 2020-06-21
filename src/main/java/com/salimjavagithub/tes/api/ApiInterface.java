@@ -9,6 +9,6 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
     @GET("search/users")
-    Call <Users> getUsers(@Query("q") String keyword, @Query("per_page") String perPage, @Query("page") String page);
+    Call <Users> getUsers(@Query("q") String keyword, @Query("per_page") String perPage, @Query("page") Integer page);
 
 }

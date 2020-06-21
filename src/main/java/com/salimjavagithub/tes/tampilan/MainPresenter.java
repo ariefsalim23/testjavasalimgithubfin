@@ -23,7 +23,7 @@ public abstract class MainPresenter implements MainView.GetUsers {
         initView.showLoading();
 
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
-        Call<Users> call = apiInterface.getUsers(keyword ,"30" ,"1");
+        Call<Users> call = apiInterface.getUsers(keyword ,"30" ,page);
         call.enqueue(new Callback<Users>() {
             @Override
             public void onResponse(@NonNull Call<Users> call, @NonNull Response<Users> response) {
